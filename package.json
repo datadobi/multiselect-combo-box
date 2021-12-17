@@ -12,7 +12,7 @@
     "url": "https://github.com/datadobi/multiselect-combo-box"
   },
   "name": "@datadobi/multiselect-combo-box",
-  "version": "2.4.2-datadobi-1",
+  "version": "2.4.2-datadobi-2",
   "main": "multiselect-combo-box.js",
   "directories": {
     "test": "test"
