@@ -1,5 +1,5 @@
 {
-  "description": "A multi select combo box web component based on Polymer 3 and the vaadin-combo-box",
+  "description": "A fork of the multi select combo box web component based on Polymer 3 and the vaadin-combo-box by gatanaso",
   "keywords": [
     "multiselect-combo-box",
     "web-components",
@@ -9,18 +9,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatanaso/multiselect-combo-box"
+    "url": "https://github.com/datadobi/multiselect-combo-box"
   },
-  "name": "multiselect-combo-box",
-  "version": "2.4.2",
+  "name": "@datadobi/multiselect-combo-box",
+  "version": "2.4.2-datadobi-1",
   "main": "multiselect-combo-box.js",
   "directories": {
     "test": "test"
   },
-  "author": "Goran",
+  "author": "Datadobi",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/gatanaso/multiselect-combo-box/issues"
+    "url": "https://github.com/datadobi/multiselect-combo-box/issues"
   },
   "files": [
     "multiselect-*.js",
