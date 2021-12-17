@@ -91,6 +91,7 @@ import './multiselect-combo-box-input.js';
             id="comboBox"
             part="combo-box"
             hidden\$="[[readonly]]"
+            theme="[[theme]]"
             items="[[items]]"
             item-id-path="[[itemIdPath]]"
             item-label-path="[[itemLabelPath]]"
@@ -117,6 +118,7 @@ import './multiselect-combo-box-input.js';
               disabled="[[disabled]]"
               clear-button-visible="[[clearButtonVisible]]">
             </multiselect-combo-box-input>
+            <slot></slot>
           </vaadin-combo-box-light>
 
           <div part="error-message" hidden\$="[[!invalid]]">[[errorMessage]]</div>
