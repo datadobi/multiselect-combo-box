@@ -1,3 +1,5 @@
+import '@vaadin/vaadin-template-renderer';
+
 import {PolymerElement} from '@polymer/polymer/polymer-element.js';
 import {html} from '@polymer/polymer/lib/utils/html-tag.js';
 import {ControlStateMixin} from '@vaadin/vaadin-control-state-mixin/vaadin-control-state-mixin.js';
@@ -91,7 +93,7 @@ import './multiselect-combo-box-input.js';
             id="comboBox"
             part="combo-box"
             hidden\$="[[readonly]]"
-            theme="[[theme]]"
+            theme\$="[[theme]]"
             items="[[items]]"
             item-id-path="[[itemIdPath]]"
             item-label-path="[[itemLabelPath]]"
