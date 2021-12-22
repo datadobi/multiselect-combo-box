@@ -340,14 +340,14 @@ import './multiselect-combo-box-input.js';
         return;
       }
 
-      const update = this.singleSelectMode ? [] : this.selectedItems.slice(0);
       const index = this._findIndex(item, this.selectedItems, this.itemIdPath);
+      let update = this.selectedItems.slice(0);
       if (index !== -1) {
-          if(!this.singleSelectMode) {
-              // Only remove current item if we're in multiselect mode --> otherwise we have already ignored it
-              update.splice(index, 1);
-          }
+        update.splice(index, 1);
       } else {
+        if (this.singleSelectMode) {
+          update = []
+        }
         update.push(item);
       }
 
