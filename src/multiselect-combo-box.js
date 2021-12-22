@@ -284,6 +284,12 @@ import './multiselect-combo-box-input.js';
          */
         renderer: Function,
 
+        singleSelectMode: {
+          type: Boolean,
+          value: false,
+          reflectToAttribute: true
+        },
+
         _itemTemplate: Object
       };
     }
@@ -334,10 +340,13 @@ import './multiselect-combo-box-input.js';
         return;
       }
 
-      const update = this.selectedItems.slice(0);
+      const update = this.singleSelectMode ? [] : this.selectedItems.slice(0);
       const index = this._findIndex(item, this.selectedItems, this.itemIdPath);
       if (index !== -1) {
-        update.splice(index, 1);
+          if(!this.singleSelectMode) {
+              // Only remove current item if we're in multiselect mode --> otherwise we have already ignored it
+              update.splice(index, 1);
+          }
       } else {
         update.push(item);
       }
