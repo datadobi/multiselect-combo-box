@@ -12,7 +12,7 @@
     "url": "https://github.com/datadobi/multiselect-combo-box"
   },
   "name": "@datadobi/multiselect-combo-box",
-  "version": "2.4.2-datadobi-5",
+  "version": "2.4.3-datadobi-5",
   "main": "multiselect-combo-box.js",
   "directories": {
     "test": "test"
@@ -49,13 +49,13 @@
   },
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
-    "@vaadin/vaadin-combo-box": "^21.0.2",
-    "@vaadin/vaadin-control-state-mixin": "^21.0.2",
-    "@vaadin/vaadin-lumo-styles": "^21.0.2",
-    "@vaadin/vaadin-material-styles": "^21.0.2",
-    "@vaadin/vaadin-template-renderer": "^21.0.2",
-    "@vaadin/vaadin-text-field": "^21.0.2",
-    "@vaadin/vaadin-themable-mixin": "^21.0.2"
+    "@vaadin/vaadin-combo-box": "^22.0.2",
+    "@vaadin/vaadin-control-state-mixin": "^22.0.2",
+    "@vaadin/vaadin-lumo-styles": "^22.0.2",
+    "@vaadin/vaadin-material-styles": "^22.0.2",
+    "@vaadin/vaadin-template-renderer": "^22.0.2",
+    "@vaadin/vaadin-text-field": "^22.0.2",
+    "@vaadin/vaadin-themable-mixin": "^22.0.2"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0",
