@@ -514,6 +514,28 @@
     </div>
 
     <div class="vertical-section-container centered">
+      <h3>Single select mode</h3>
+      <demo-snippet>
+        <template>
+          <multiselect-combo-box
+            id="singleSelectMode"
+            label="Element"
+            placeholder="Select existing or type custom value"
+            single-select-mode
+          ></multiselect-combo-box>
+
+          <script>
+            customElements.whenDefined('multiselect-combo-box').then(() => {
+              const comboBox = document.querySelector('#singleSelectMode');
+              comboBox.items = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium'];
+              comboBox.selectedItems = ['Helium', 'Lithium'];
+            });
+          </script>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container centered">
       <h3>Custom filtering</h3>
       <demo-snippet>
         <template>

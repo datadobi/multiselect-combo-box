@@ -322,6 +322,12 @@ class MultiselectComboBox extends MultiselectComboBoxMixin(InputControlMixin(The
        */
       renderer: Function,
 
+      singleSelectMode: {
+        type: Boolean,
+        value: false,
+        reflectToAttribute: true
+      },
+
       /**
        * Filtering string the user has typed into the input field.
        * @attr {string} filter-value
@@ -538,6 +544,9 @@ class MultiselectComboBox extends MultiselectComboBoxMixin(InputControlMixin(The
     if (index !== -1) {
       itemsCopy.splice(index, 1);
     } else {
+      if (this.singleSelectMode) {
+        itemsCopy.splice(0, itemsCopy.length);
+      }
       itemsCopy.push(item);
     }
 

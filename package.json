@@ -1,15 +1,15 @@
 {
-  "name": "multiselect-combo-box",
-  "version": "2.4.2",
-  "description": "A multiselect combo box web component compatible with the Vaadin Web Components",
+  "name": "@datadobi/multiselect-combo-box",
+  "version": "3.0.0-alpha1-datadobi-1",
+  "description": "A fork of the multiselect combo box web component compatible with the Vaadin Web Components by gatanaso",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatanaso/multiselect-combo-box"
+    "url": "https://github.com/datadobi/multiselect-combo-box"
   },
-  "author": "Goran",
+  "author": "Datadobi",
   "bugs": {
-    "url": "https://github.com/gatanaso/multiselect-combo-box/issues"
+    "url": "https://github.com/datadobi/multiselect-combo-box/issues"
   },
   "main": "multiselect-combo-box.js",
   "module": "multiselect-combo-box.js",
