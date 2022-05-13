@@ -170,6 +170,7 @@ class MultiselectComboBox extends MultiselectComboBoxMixin(InputControlMixin(The
                 hidden$="[[_isTokensHidden(readonly, compactMode, _hasValue)]]"
                 on-item-removed="_onItemRemoved"
                 on-mousedown="_preventBlur"
+                theme$="[[theme]]"
               ></multiselect-combo-box-chip>
             </template>
             <slot name="input"></slot>

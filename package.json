@@ -1,6 +1,6 @@
 {
   "name": "@datadobi/multiselect-combo-box",
-  "version": "3.0.0-alpha1-datadobi-1",
+  "version": "3.0.0-alpha1-datadobi-2",
   "description": "A fork of the multiselect combo box web component compatible with the Vaadin Web Components by gatanaso",
   "license": "Apache-2.0",
   "repository": {
