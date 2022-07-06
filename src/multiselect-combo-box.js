@@ -485,7 +485,8 @@ class MultiselectComboBox extends MultiselectComboBoxMixin(InputControlMixin(The
 
     // Wait for chips to render
     requestAnimationFrame(() => {
-      this.$.comboBox.$.dropdown._setOverlayWidth();
+      const overlay = this.$.comboBox.$.dropdown.$.overlay;
+      overlay._setOverlayWidth(this.$.comboBox, overlay.opened);
     });
   }
 
